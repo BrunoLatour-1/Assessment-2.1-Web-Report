@@ -1,8 +1,8 @@
 body {
-  font-family: 'Roboto', sans-serif; /* Use the selected font */
+    font-family: 'Roboto', sans-serif; /* Use the selected font */
     color: #333; /* Dark text color */
     background-color: #f4f4f4; /* Light background for contrast */
-    background-image: url('Interior Design.jpg'); /* Replace with your image file or URL */
+    background-image: url('Interior Design.jpg'); /* Ensure the path is correct */
     background-size: cover; /* Ensures the image covers the entire background */
     background-repeat: no-repeat; /* Prevents tiling */
     background-position: center; /* Centers the image */
