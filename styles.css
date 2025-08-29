@@ -1,26 +1,30 @@
 body {
-    font-family: 'Roboto', sans-serif; /* Use the selected font */
-    color: #333; /* Dark text color */
-    background-color: #f4f4f4; /* Light background for contrast */
-    background-image: url('Interior Design.jpg'); /* Ensure the path is correct */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-repeat: no-repeat; /* Prevents tiling */
-    background-position: center; /* Centers the image */
-    background-attachment: fixed; /* Keeps the image static while scrolling */
+    font-family: 'Roboto', sans-serif; 
+    color: #333; 
+    background-color: #f4f4f4; 
+    background-image: url('Interior Design.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed; 
     margin: 0;
     padding: 20px;
 }
 
+/* Header */
 header {
-    background-color: #88d3d5;  
-    color: black; 
+    background-color: #6f81b3;
+    color: black;
     padding: 20px 0;
     text-align: center;
 }
 
-nav ul {    
+/* Navigation */
+nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -29,11 +33,30 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* White links */
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+    color: #2c3e50;
 }
+
+/* Typography Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+p, a, li, input, textarea, button {
+    font-family: 'Poppins', sans-serif;
+}
+
