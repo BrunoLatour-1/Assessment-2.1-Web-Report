@@ -18,6 +18,16 @@ header {
     text-align: center;
 }
 
+footer a {
+    color: #88d3d5;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 /* Navigation */
 nav ul {
     list-style: none;
