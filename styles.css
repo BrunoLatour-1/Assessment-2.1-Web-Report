@@ -1,14 +1,13 @@
 body {
-    font-family: 'Roboto', sans-serif; 
-    color: #333; 
-    background-color: #f4f4f4; 
-    background-image: url('Interior Design.jpg'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    background-attachment: fixed; 
-    margin: 0;
-    padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 20px;
 }
 
 /* Header */
@@ -44,12 +43,11 @@ nav ul li a:hover {
     color: #2c3e50;
 }
 
-/* Typography Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
+.nav-links li a.active {
+  border-bottom: 2px solid #fff;
+  color: #2c3e50;
 }
-
+/* Main Content */
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
     color: #2c3e50;
