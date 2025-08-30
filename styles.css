@@ -11,16 +11,6 @@ body {
   padding: 20px;
 }
 
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-  color: #2c3e50;
-  margin-bottom: 10px;
-}
-
-p, a, li, input, textarea, button {
-    font-family: 'Poppins', sans-serif;
-}
-
 /* Header */
 header {
     background-color: #6f81b3;

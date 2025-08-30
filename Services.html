@@ -24,17 +24,26 @@
     <main>
         <section id="services">
             <h2>Services Offered</h2>
-            <ul>
-                <li>
-                    <strong>Residential Design:</strong> Creating stylish and functional living spaces tailored to your needs.
-                </li>
-                <li>
-                    <strong>Commercial Design:</strong> Designing commercial environments that enhance productivity and beautiful surroundings.
-                </li>
-                <li>
-                    <strong>Consultation Services:</strong> Offering expert advice to help you make informed design decisions.
-                </li>
-            </ul>
+            <div class="filter-buttons">
+            <button data-category="all">All</button>
+            <button data-category="residential">Residential</button>
+            <button data-category="commercial">Commercial</button>
+            <button data-category="consultation">Consultation</button>
+        </div>
+
+            <ul class="service-list">
+            <li class="service-item residential">
+            <strong>Residential Design:</strong> Creating stylish and functional living spaces tailored to your needs.
+            </li>
+            <li class="service-item commercial">
+                <strong>Commercial Design:</strong> Designing commercial environments that enhance productivity and beautiful surroundings.
+            </li>
+            <li class="service-item consultation">
+                <strong>Consultation Services:</strong> Offering expert advice to help you make informed design decisions.
+            </li>
+</ul>
+
+            
             <a href="contact.html" class="cta-button">Request a Consultation</a>
         </section>
 

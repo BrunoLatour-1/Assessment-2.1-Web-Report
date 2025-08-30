@@ -55,3 +55,18 @@ window.nextQuote = function () {
     quoteElement.textContent = quotes[index];
   }
 };
+
+document.querySelectorAll('.filter-buttons button').forEach(button => {
+  button.addEventListener('click', () => {
+    const category = button.getAttribute('data-category');
+    const items = document.querySelectorAll('.service-item');
+
+    items.forEach(item => {
+      if (category === 'all' || item.classList.contains(category)) {
+        item.style.display = 'list-item';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+});
