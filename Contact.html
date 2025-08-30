@@ -7,11 +7,11 @@
     <title>Malik Khan Design Consultancy</title>  
 </head>
 <body>
-    ><header>
+    <header>
         <h1>Malik Khan Design Consultancy</h1>
         <nav>
             <ul>
-                <<li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="blog.html">Blog</a></li>
@@ -19,28 +19,48 @@
             </ul>
         </nav>
     </header>
-<main>
-        <section>
-            <h2>Contact Us</h2>
-            <p>If you have any questions or would like to discuss your design needs, please reach out to us!</p>
-            <form action="submit_form.php" method="post">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-                
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
-                
-                <input type="submit" value="Submit">
-            </form>
-        </section>
-    </main>
+
+ <main>
+    <section class="contact-form">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or would like to discuss your design needs, please reach out to us!</p>
+
+      <form action="submit_form.php" method="post" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <label>
+          <input type="checkbox" required />
+          I consent to the collection and use of my data for consultation purposes.
+        </label>
+        <p class="disclaimer">
+          Note: Some responses may be generated using AI tools to assist with proposal drafting. All final recommendations are reviewed by Malik Khan.
+        </p>
+
+        <input type="submit" value="Submit" />
+        <p id="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
 
     <footer>
-        <p>&copy; 2025 Malik Khan Design Consultancy. All rights reserved.</p>
-    </footer>
+    <p>Contact: <a href="mailto:malik@designconsultancy.com">malik@designconsultancy.com</a></p>
+    <p>Follow us: 
+      <a href="https://www.instagram.com/" target="_blank">Instagram</a> | 
+      <a href="https://au.linkedin.com/" target="_blank">LinkedIn</a> | 
+      <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+    </p>
+    <p><a href="privacy.html">Privacy Policy</a></p>
+    <p>&copy; 2025 Malik Khan Design Consultancy. All rights reserved.</p>
+  </footer>
 
-    <script src="scripts.js"></script>
+  <script src="scripts.js"></script>
 </body>
+</html>
