@@ -47,10 +47,11 @@ const quotes = [
 
 let index = 0;
 
-function nextQuote() {
+//Make the function globally accessible
+window.nextQuote = function () {
   const quoteElement = document.getElementById("quote");
   if (quoteElement) {
     index = (index + 1) % quotes.length;
     quoteElement.textContent = quotes[index];
   }
-}
+};
