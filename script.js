@@ -34,4 +34,19 @@ function validateForm() {
   status.style.color = "green";
   return true;
 }
- 
+
+// Testimonials
+const quotes = [
+  "Malik transformed our office into a vibrant, functional space.",
+  "The residential redesign exceeded our expectations.",
+  "Professional, creative, Malik and his team are easy to work with!",
+  "Highly recommend Malik for any design project.",
+  "Local expertise with high quality standards."
+];
+
+let index = 0;
+
+function nextQuote() {
+  index = (index + 1) % quotes.length;
+  document.getElementById("quote").textContent = quotes[index];
+}
