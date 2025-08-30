@@ -1,3 +1,4 @@
+// Validate Form
 function validateForm() {
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
@@ -35,7 +36,7 @@ function validateForm() {
   return true;
 }
 
-// Testimonials
+// Testimonial Rotator
 const quotes = [
   "Malik transformed our office into a vibrant, functional space.",
   "The residential redesign exceeded our expectations.",
@@ -47,6 +48,9 @@ const quotes = [
 let index = 0;
 
 function nextQuote() {
-  index = (index + 1) % quotes.length;
-  document.getElementById("quote").textContent = quotes[index];
+  const quoteElement = document.getElementById("quote");
+  if (quoteElement) {
+    index = (index + 1) % quotes.length;
+    quoteElement.textContent = quotes[index];
+  }
 }
